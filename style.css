@@ -38,7 +38,7 @@ body {
 
 .element {
     position: absolute;
-    left: 100px;
+    left: 250px;
     font-size: 20px;
 }
 
@@ -50,11 +50,13 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    max-width: 992px;
 
 }
 
 .nav-list li:hover {
     border-bottom: 2px solid white;
+    width: max-content;
 }
 
 .container {
@@ -228,3 +230,70 @@ body {
 .three {
     flex: 1 1 auto;
 }
+
+.nav_toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+
+@media (max-width: 768px) {
+  
+    .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+           
+        margin-right: 20px;
+        padding: 0;
+        list-style: none;
+        max-width: 992px;
+
+        left: 100%;
+        transition: left;
+        display: none;
+        }
+        
+    .nav-list li:hover {
+        background: none;
+        width: max-content;
+        color: #55C2D8;
+       
+        }
+
+    .nav_toggle {
+        color: white;
+        background: none;
+        border: none;
+        font-size: 30px;
+        padding: 0 20px;
+        line-height: 60px;
+        
+        
+        display: block
+        
+        }
+
+        .container3 {
+            flex-direction: column;
+            font-style: normal;
+            text-align: center;
+        
+        }
+        }
+    
+    /*    
+    .nav-list_visible {
+        left: 0;
+        }
+    */
+
+    
+        
+    
+
+
